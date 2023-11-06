@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        .level-0, .level-1, .level-2 {
+            background-color: #f2f2f2;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .level-1, .level-2 {
+            margin-left: 20px;
+        }
+
+        .checklist-item {
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Checklist for Define Reference table</h2>
+
+    <div class="level-0">
+        <h3>Level-0: Agency Steward</h3>
+        <div class="checklist-item">
+            <p>Raise request for creating a new Lookup table in RDM.</p>
+            <p>Provide the valid table name and table structure details.</p>
+            <p>Check the DQ validation rules while providing the table.</p>
+            <p>Once complete providing input values, then click on Submit button.</p>
+        </div>
+    </div>
+
+    <div class="level-1">
+        <h3>Level-1: RDM Governance Lead</h3>
+        <div class="checklist-item">
+            <p>Verify the define request form.</p>
+            <p>Task Assign to RDM Governance team.</p>
+            <p>RDM Governance Lead Review and Approve the request. Once Approved, the task goes to the RDM Governance Team (Level 2).</p>
+            <p>RDM Governance Lead Review and Reject the request. Once rejected, the task goes to the Agency Steward (Level 0).</p>
+        </div>
+    </div>
+
+    <div class="level-2">
+        <h3>Level-2: RDM Governance Team</h3>
+        <div class="checklist-item">
+            <p>RDM Governance Team implements the new table as per Agency Data Steward request form details.</p>
+            <p>Open the RDM tool and create the new table in Dev.</p>
+            <p>Open the provisioning tool and create the new Business Entity and Business Entity View.</p>
+            <p>Open the transformation Business Entity TO Business Entity VIEW and Business Entity VIEW TO Business Entity.</p>
+            <p>UI Layout and workflow design configuration in Layout Designer.</p>
+            <p>Once all changes are completed, click on Apply and Publish button.</p>
+            <p>Login E360 application, open task manager and click Approve button; the task goes to the Closed state.</p>
+            <p>Once rejected, the task goes to the RDM Governance Lead (Level 1).</p>
+        </div>
+    </div>
+</body>
+</html>
